@@ -1,21 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <qrcode value="Hello, World!" :options="{ width: 200 }"></qrcode>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/qrView">QRコード 表示</router-link> |
+      <router-link to="/qrReader">QRコード 読取り</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {

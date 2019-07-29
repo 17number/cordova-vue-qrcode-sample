@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./Home.vue";
 import QrView from "./QrView.vue";
 import QrReader from "./QrReader.vue";
+import QrReaderCordova from "./QrReaderCordova.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: "/qrReader",
       name: "qrReader",
       component: QrReader
+    },
+    {
+      path: "/qrReaderCordova",
+      name: "qrReaderCordova",
+      component: QrReaderCordova
     }
   ]
 });
